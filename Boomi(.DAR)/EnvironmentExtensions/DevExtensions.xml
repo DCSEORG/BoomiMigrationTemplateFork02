@@ -1,0 +1,8 @@
+<EnvironmentExtensions>
+  <Extension name="Azure SQL Connection.ConnectionURL"
+             value="jdbc:sqlserver://dev-db.database.windows.net;database=FinanceDev"/>
+  <Extension name="Azure SQL Connection.Username" value="dev_user"/>
+  <Extension name="Azure SQL Connection.Password" value="dev_pass"/>
+  <Extension name="OracleCCS HTTP.ConnectionURL"
+             value="https://dev-ccs.example.com/api/customers"/>
+</EnvironmentExtensions>
