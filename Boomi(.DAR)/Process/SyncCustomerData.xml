@@ -1,1 +1,22 @@
 
+<Process name="SyncCustomerData" id="proc-123" type="PROCESS">
+  <Shape name="Start" type="START">
+    <NextShape>GetFromSQL</NextShape>
+  </Shape>
+
+  <Shape name="GetFromSQL" type="CONNECTOR">
+    <ConnectorId>conn-sql-01</ConnectorId>
+    <OperationId>op-select-01</OperationId>
+    <NextShape>MapToJSON</NextShape>
+  </Shape>
+
+  <Shape name="MapToJSON" type="MAP">
+    <MapId>map-ccs-01</MapId>
+    <NextShape>PostToCCS</NextShape>
+  </Shape>
+
+  <Shape name="PostToCCS" type="CONNECTOR">
+    <ConnectorId>conn-http-01</ConnectorId>
+    <OperationId>op-http-01</OperationId>
+  </Shape>
+</Process>
