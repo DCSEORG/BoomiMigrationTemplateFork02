@@ -1,0 +1,47 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Secrets and sensitive configuration
+secrets/
+*.secret
+*.key
+
+# Azure deployment files
+*.azuredeploy.json.bak
+*.parameters.json.bak
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Build output (if any)
+dist/
+build/
+out/
+
+# Node modules (if any Node.js tooling is added)
+node_modules/
