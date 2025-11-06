@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "eastus"
+    },
+    "environment": {
+      "value": "dev"
+    },
+    "sqlServerName": {
+      "value": "your-sql-server-name"
+    },
+    "sqlDatabaseName": {
+      "value": "your-database-name"
+    },
+    "sqlUsername": {
+      "value": "sqladmin"
+    },
+    "sqlPassword": {
+      "value": "YOUR_SQL_PASSWORD_HERE"
+    },
+    "oracleHost": {
+      "value": "your-oracle-host"
+    },
+    "oraclePort": {
+      "value": "1521"
+    },
+    "oracleServiceName": {
+      "value": "ORCL"
+    },
+    "oracleUsername": {
+      "value": "oracleadmin"
+    },
+    "oraclePassword": {
+      "value": "YOUR_ORACLE_PASSWORD_HERE"
+    },
+    "pollingIntervalSeconds": {
+      "value": 60
+    }
+  }
+}
